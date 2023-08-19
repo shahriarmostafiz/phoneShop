@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <!-- parent section   -->
+      <section class="md:flex md:justify-between p-4 md:p-8">
+        <!-- cards div  -->
+        <div class="flex-1 grid grid-cols-1 lg:grid-cols-3 gap-y-8">
+          <!-- card 1   -->
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure><img src="/images/one.png" alt="Iphone 1" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Iphone 15</h2>
+              <p class="text-lg">Best Iphone ever</p>
+              <h1 class="font-semibold text-xl">Price: $$ 1499</h1>
+              <div class="card-actions">
+                <button class="btn btn-primary" onclick="addToCard(this)">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- card 2  -->
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure><img src="/images/two.png" alt="Iphone 1" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Iphone 13</h2>
+              <p class="text-lg">Best Performance with A-14 Bionic Chip</p>
+              <h1 class="font-semibold text-xl">Price: $$ 799</h1>
+              <div class="card-actions">
+                <button class="btn btn-primary" onclick="addToCard(this)">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- card 3  -->
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure><img src="/images/three.png" alt="Iphone 1" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Iphone 11</h2>
+              <p class="text-lg">Make life easy with A-11 Bionic Chip</p>
+              <h1 class="font-semibold text-xl">Price: $$ 599</h1>
+              <div class="card-actions">
+                <button class="btn btn-primary" onclick="addToCard(this)">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- card 4  -->
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure><img src="/images/s21.png" alt="Iphone 1" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Samsung Galaxy S21</h2>
+              <p class="text-lg">Best Android for the budget</p>
+              <h1 class="font-semibold text-xl">Price: $$ 699</h1>
+              <div class="card-actions">
+                <button class="btn btn-primary" onclick="addToCard(this)">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- card 5  -->
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure><img src="/images/s22.png" alt="Iphone 1" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Samsung Galaxy S23 Ultra</h2>
+              <p class="text-lg">Best Android ever</p>
+              <h1 class="font-semibold text-xl">Price: $$ 1299</h1>
+              <div class="card-actions">
+                <button class="btn btn-primary" onclick="addToCard(this)">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- card 6  -->
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure><img src="/images/flip5.png" alt="Iphone 1" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Samsung Z Flip 5</h2>
+              <p class="text-lg">Best Flip Android ever</p>
+              <h1 class="font-semibold text-xl">Price: $$ 1199</h1>
+              <div class="card-actions">
+                <button class="btn btn-primary" onclick="addToCard(this)">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- total section  -->
+        <div class="text-lg w-[350px]">
+          <h1 class="text-3xl text-center">Cart Total</h1>
+          <div
+            class="p-4 border-b-2 border-black"
+            id="card-items-section"
+          ></div>
+
+          <h1>Total <span id="total">00</span></h1>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
