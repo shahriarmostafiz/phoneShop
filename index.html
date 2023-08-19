@@ -12,14 +12,70 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header></header>
+    <header class="mb-20">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-40"
+            >
+              <li><a>Apple</a></li>
+              <li>
+                <a>Android</a>
+                <ul class="p-2">
+                  <li><a>S 21</a></li>
+                  <li><a>S 23 Ultra</a></li>
+                </ul>
+              </li>
+              <li><a>Z Flip 5</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost normal-case text-xl">PhoneShopUp</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Apple</a></li>
+            <li tabindex="0">
+              <details>
+                <summary>Android</summary>
+                <ul class="p-2">
+                  <li><a>S 21</a></li>
+                  <li><a>S 23 Ultra</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a>Z Flip 5</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn">Login</a>
+        </div>
+      </div>
+    </header>
     <main>
       <!-- parent section   -->
       <section class="md:flex md:justify-between p-4 md:p-8">
         <!-- cards div  -->
         <div class="flex-1 grid grid-cols-1 lg:grid-cols-3 gap-y-8">
           <!-- card 1   -->
-          <div class="card w-96 bg-base-100 shadow-xl">
+          <div class="card w-96 lg:w-80 bg-base-100 shadow-xl">
             <figure><img src="/images/one.png" alt="Iphone 1" /></figure>
             <div class="card-body">
               <h2 class="card-title">Iphone 15</h2>
@@ -33,7 +89,7 @@
             </div>
           </div>
           <!-- card 2  -->
-          <div class="card w-96 bg-base-100 shadow-xl">
+          <div class="card w-96 lg:w-80 bg-base-100 shadow-xl">
             <figure><img src="/images/two.png" alt="Iphone 1" /></figure>
             <div class="card-body">
               <h2 class="card-title">Iphone 13</h2>
@@ -47,7 +103,7 @@
             </div>
           </div>
           <!-- card 3  -->
-          <div class="card w-96 bg-base-100 shadow-xl">
+          <div class="card w-96 lg:w-80 bg-base-100 shadow-xl">
             <figure><img src="/images/three.png" alt="Iphone 1" /></figure>
             <div class="card-body">
               <h2 class="card-title">Iphone 11</h2>
@@ -61,7 +117,7 @@
             </div>
           </div>
           <!-- card 4  -->
-          <div class="card w-96 bg-base-100 shadow-xl">
+          <div class="card w-96 lg:w-80 bg-base-100 shadow-xl">
             <figure><img src="/images/s21.png" alt="Iphone 1" /></figure>
             <div class="card-body">
               <h2 class="card-title">Samsung Galaxy S21</h2>
@@ -75,7 +131,7 @@
             </div>
           </div>
           <!-- card 5  -->
-          <div class="card w-96 bg-base-100 shadow-xl">
+          <div class="card w-96 lg:w-80 bg-base-100 shadow-xl">
             <figure><img src="/images/s22.png" alt="Iphone 1" /></figure>
             <div class="card-body">
               <h2 class="card-title">Samsung Galaxy S23 Ultra</h2>
@@ -89,7 +145,7 @@
             </div>
           </div>
           <!-- card 6  -->
-          <div class="card w-96 bg-base-100 shadow-xl">
+          <div class="card w-96 lg:w-80 bg-base-100 shadow-xl">
             <figure><img src="/images/flip5.png" alt="Iphone 1" /></figure>
             <div class="card-body">
               <h2 class="card-title">Samsung Z Flip 5</h2>
